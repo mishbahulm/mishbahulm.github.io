@@ -28,42 +28,6 @@ header {
   z-index: 999;
 }
 
-/* .topnav {
-  background-color: #18122B;
-  padding: 1px;
-  position: sticky;
-  top: 0;
-
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-between;
-  z-index: 999;
-} */
-
-/* nav ul {
-  justify-content: right;
-  padding-inline: 4rem;
-
-  display: flex;
-  gap: 2rem;
-}
-
-nav li {
-  list-style-type: none;
-}
-
-nav a {
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-
-  color: white;
-}
-
-nav a:hover {
-  font-weight: bold;
-} */
-
 .topnav a {
   float: left;
   display: block;
