@@ -7,7 +7,7 @@
     <title>mishbahulm</title>
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
     <!-- CSS utama -->
     <link rel="stylesheet" href="assets/styles/style.css" />
@@ -17,29 +17,28 @@
 
     <!-- Prims -->
     <link rel="stylesheet" href="assets/styles/prism.css" />
+
+    <!-- Carousel -->
+    <!-- <script src="assets/js/carousel.js"></script> -->
   </head>
   <body>
     <header>
       <div class="jumbotron">
         <h1><a href="https://mishbahulm.github.io/">mishbahulm</a></h1>
         <p>
-          Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi
-          tersebut.
+          My vision at work is if plan A fails then make plan B and if plan B fails then don't worry because the alphabet more than characters.
         </p>
       </div>
 
-      <nav class="navbar-container">
-        <div class="me">
-          <h3>&lt; Munir :></h3>
-        </div>
-        <div class="nav-list">
-          <ul>
-            <li><a href="#whoami">:~$ whoami </a></li>
-            <li><a href="#work">&lt; Work :></a></li>
-            <li><a href="#geografis">&lt; About :></a></li>
-            <li><a href="#contact">&lt; Contact :></a></li>
-          </ul>
-        </div>        
+      <nav class="navbar-container topnav" id="myTopnav">
+        <a href="#" class="active" id="home" onclick="navClick('home')">&lt; Munir :></a>
+        <a href="#whoami" class="" id="navWho" onclick="navClick('whoami')">:~$ whoami</a>
+        <a href="#work" class="" id="navWork" onclick="navClick('work')">&lt; Work :></a>
+        <a href="#about" class="" id="navAbout" onclick="navClick('about')">&lt; About :></a>
+        <a href="#contact" class="" id="navContact" onclick="navClick('contact')">&lt; Contact :></a>
+        <a href="javascript:void(0);" class="icon" onclick="listClick()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
 
@@ -49,7 +48,7 @@
           <header>
             <h2>:~$ whoami</h2>
             <figure>
-              <img src="assets/image/mishbahulm_pp.jpg" alt="Bandung Badge" />
+              <img src="assets/images/mishbahulm_pp.jpg" alt="Bandung Badge" />
               <!-- <figcaption>Photo</figcaption> -->
             </figure>
             <p>Hi, my Name is </br> 
@@ -71,35 +70,12 @@
             <strong>Experienced Programmer.</strong> More than ten years in Information Technology, especially in programming. Working at company as a programmer adds analyst skills in programming.
           </p>
 
-          <section>
-            <h3>Farm House Lembang</h3>
-            <img class="featured-image" src="assets/image/farm-house.jpg" alt="farm house" />
-            <p>
-              Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak
-              pernah sepi pengunjung. Selain karena letaknya strategis, kawasan ini juga
-              menghadirkan nuansa wisata khas Eropa. Semua itu diterapkan dalam bentuk spot swafoto
-              Instagramable.
-            </p>
-          </section>
+          <div id="works"></div>
 
-          <section>
-            <h3>Observatorium Bosscha</h3>
-            <img class="featured-image" src="assets/image/bosscha.jpg" alt="bosscha" />
-            <p>
-              Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti,
-              Refraktor Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah
-              jenis teleskop terbesar untuk meneropong bintang. Benda ini diletakkan pada atap kubah
-              sehingga saat teropong digunakan, atap tersebut harus dibuka. Observatorium Bosscha
-              boleh dikunjungi oleh siapa pun, tanpa tiket. Namun, bagi yang ingin menggunakan
-              teleskop Zeiss, wajib mendaftarkan diri. Untuk instansi atau lembaga pendidikan,
-              diberikan jadwal hari Selasa sampai Jumat. Sementara itu, kunjungan individu dibuka
-              setiap hari Sabtu.
-            </p>
-          </section>
         </article>
         
         <article class="card" id="about">
-          <h2>About</h2>
+          <h2>&lt; About :></h2>
           <pre>
             <code class="language-java line-numbers" data-prismjs-copy="copy">
               public class Mishbahulm {
@@ -182,5 +158,11 @@
 
     <!-- Prism -->
     <script src="assets/js/prism.js"></script>
+
+    <!-- Carousel -->
+    <script src="assets/js/carousel.js"></script>
+
+    <!-- Nav -->
+    <script src="assets/js/nav.js"></script>
   </body>
 </html>
