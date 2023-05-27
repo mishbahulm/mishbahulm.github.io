@@ -74,53 +74,53 @@
           <h2>&lt; About :></h2>
           <pre>
             <code class="language-java line-numbers" data-prismjs-copy="copy">
-              public class Mishbahulm {
-                String name;
-                String dob;
-                String email;
-                
-                public Mishbahulm(String name, String dob, String email) {
-                  this.name = name;
-                  this.dob = dob;
-                  this.email = email;
-                }
+public class Mishbahulm {
+  String name;
+  String dob;
+  String email;
+  
+  public Mishbahulm(String name, String dob, String email) {
+    this.name = name;
+    this.dob = dob;
+    this.email = email;
+  }
 
-                public static void main(String[] args) {
-                  Mishbahulm munir = new Mishbahulm("Muhammad Mishbahul Munir", 
-                    "August 26, 1990", 
-                    "munir.m3@gmail.com");
-                  System.out.println("Hello "+munir.name);
-                }
+  public static void main(String[] args) {
+    Mishbahulm munir = new Mishbahulm("Muhammad Mishbahul Munir", 
+      "August 26, 1990", 
+      "munir.m3@gmail.com");
+    System.out.println("Hello from "+munir.name);
+  }
 
-                public Map&lt;String, Object> workExperience() {
-                  Map&lt;String, Object> exps = new HashMap&lt;>();
-                  
-                  exps.put("2023-now", "Technical consultant at MII");
-                  exps.put("2021-2023", "Senior Java Developer at PIS");
-                  exps.put("2019-2021", "System Analyst at AXI");
-                  exps.put("2017-2019", "Sr Programmer Analyst at AXI");
-                  exps.put("2012-2017", "Jr Programmer Analyst at AG");
-          
-                  return exps;
-                }
+  public Map&lt;String, Object> workExperience() {
+    Map&lt;String, Object> exps = new HashMap&lt;>();
+    
+    exps.put("2023-now", "Technical consultant at MII");
+    exps.put("2021-2023", "Senior Java Developer at PIS");
+    exps.put("2019-2021", "System Analyst at AXI");
+    exps.put("2017-2019", "Senior Programmer Analyst at AXI");
+    exps.put("2012-2017", "Junior Programmer Analyst at AG");
 
-                public Map&lt;String, Object> education() {
-                  Map&lt;String, Object> edu = new HashMap&lt;>();
-                  
-                  edu.put("2018", "Bachelor Degree Informatics Engineering, "+
-                    "Muhammadiyah University Jakarta, Indonesia");
-                  edu.put("2012", "Diploma 3 Computer Engineering, "+
-                    "Polytechnic University | Jember, Indonesia");
-          
-                  return edu;
-                }
+    return exps;
+  }
 
-                String[] skills = {"Java", "Delphi", "Foxpro", "JavaScript", 
-                  "HTML", "Ms SQL Server", "C++", "VB", "PHP",
-                  "AngularJS", "CodeIgniter", "Model View Controller (MVC)", 
-                  "Git (Version Control Software)", 
-                  "Zoho Project (Management Project Software)"};
-              }
+  public Map&lt;String, Object> education() {
+    Map&lt;String, Object> edu = new HashMap&lt;>();
+    
+    edu.put("2018", "Bachelor Degree Informatics Engineering, "+
+      "Muhammadiyah University Jakarta, Indonesia");
+    edu.put("2012", "Diploma 3 Computer Engineering, "+
+      "Polytechnic University | Jember, Indonesia");
+
+    return edu;
+  }
+
+  String[] skills = {"Java", "Delphi", "Foxpro", "JavaScript", 
+    "HTML", "Ms SQL Server", "C++", "VB", "PHP",
+    "AngularJS", "CodeIgniter", "Model View Controller (MVC)", 
+    "Git (Version Control Software)", 
+    "Zoho Project (Management Project Software)"};
+}
             </code>
           </pre>
         </article>
@@ -141,6 +141,12 @@
                 <li>
                   <a href="https://www.instagram.com/munir.m3/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </li>
+                <li>
+                  <a href="mailto:munir.m3@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li>
+                  <a href="https://wa.me/6285749695956" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </li>
               </ul>
             </div>
         </article>
@@ -149,7 +155,8 @@
     </main>
 
     <footer>
-      <p>Made with &lt;3 by mishbahulm &#169; 2023. Inspired by <a href="https://www.dicoding.com/" target="_blank">dicoding.com</a> | <a href="https://yasio.dev/" target="_blank">yasio.dev</a> </p>
+      <p>Made with &lt;3 by mishbahulm &#169; 2023. </p>
+      <!-- Inspired by <a href="https://www.dicoding.com/" target="_blank">dicoding.com</a> | <a href="https://yasio.dev/" target="_blank">yasio.dev</a> -->
     </footer>
 
     <!-- Prism -->

@@ -1,16 +1,16 @@
 // generate element
 const works = ["Web", "Mobile", "Desktop"];
 
-const desktop = ["desktop-bcabilling.jpeg", "desktop-bcark.jpeg", "desktop-maybankbilling.jpeg",
-  "desktop-paninbank.jpeg", "desktop-prubukupolis.jpeg", "desktop-pruletter.jpeg", "desktop-pruscan.jpeg"];
+const desktop = ["desktop-pruscan.jpeg", "desktop-bcabilling.jpeg", "desktop-bcark.jpeg", "desktop-maybankbilling.jpeg",
+  "desktop-paninbank.jpeg", "desktop-pruletter.jpeg"];
 
-const mobile = ["mobile-myview1.jpeg", "mobile-myview2.jpeg", 
-  "mobile-solarsystem1.jpeg", "mobile-solarsystem2.jpeg", "mobile-solarsystem3.jpeg", 
+const mobile = ["mobile-solarsystem1.jpeg", "mobile-solarsystem2.jpeg", "mobile-solarsystem3.jpeg", 
   "mobile-solarsystem4.jpeg", "mobile-solarsystem5.jpeg",
-  "mobile-wisata1.jpeg", "mobile-wisata2.jpeg"];
+  "mobile-wisata1.jpeg", "mobile-wisata2.jpeg", "mobile-myview1.jpeg", "mobile-myview2.jpeg"];
 
-const web = ["web-mdms1.jpeg", "web-mdms2.jpeg", "web-mdms3.jpeg", "web-mdms4.jpeg", 
-  "web-mdms5.jpeg", "web-mempis1.jpeg", "web-mempis2.jpeg", "web-mempis3.jpeg"];
+const web = ["web-mempis1.jpeg", "web-mempis2.jpeg", "web-mempis3.jpeg",
+  "web-mdms1.jpeg", "web-mdms2.jpeg", "web-mdms3.jpeg", "web-mdms4.jpeg", 
+  "web-mdms5.jpeg",];
 
 var show = [];
 for (i = 0; i < works.length; i++) {
@@ -76,6 +76,7 @@ for (i = 0; i < works.length; i++) {
     document.getElementById('works').appendChild(section);
 }
 
+// carousel main functions
 // web
 var slidePositionWeb = 1;
 SlideShowWeb(slidePositionWeb);
@@ -166,4 +167,4 @@ function SlideShowDesktop(n) {
   circles[slidePositionDesktop-1].className += " enable";
 }
 
-// next benerin boiler plate di slideshow carousel
+// next benerin boiler plate fungsi carousel

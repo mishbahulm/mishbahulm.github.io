@@ -1,4 +1,4 @@
-var x = document.getElementById("myTopnav");
+var nav = document.getElementById("myTopnav");
 var home = document.getElementById("home");
 var who = document.getElementById("navWho");
 var work = document.getElementById("navWork");
@@ -6,15 +6,15 @@ var about = document.getElementById("navAbout");
 var contact = document.getElementById("navContact");
 
 function listClick() {    
-    if (x.className === "topnav") {
-      x.className += " responsive";
+    if (nav.className === "topnav") {
+      nav.className += " responsive";
     } else {
-      x.className = "topnav";
+      nav.className = "topnav";
     }
 }
 
 function navClick(val) {
-    x.className = " topnav";
+    nav.className = " topnav";
     if (val == "home") home.className = "active";    
     if (val == "whoami") who.className = "active";    
     if (val == "work") work.className = "active";
